@@ -22,10 +22,10 @@ jobs:
       with:
         registry: registry.cn-hangzhou.aliyuncs.com
         username: chch121
-        password: Qjxhsxc2024.
+        password: qqwweerr110
         logout: false
 
     - name: Use Skopeo Tools Sync Image to Docker Hub
       run: |
-         skopeo copy docker://docker.io/rocm/rocm-terminal:latest docker://registry.cn-hangzhou.aliyuncs.com/leochen02/rocm-terminal:latest
+         skopeo copy docker://docker.io/rocm/jax:latest docker://registry.cn-hangzhou.aliyuncs.com/leochen02/jax:latest
       # 使用 skopeo 工具将镜像同步到阿里云个人仓库中，使用时请自行源和目标修改仓库名称和镜像名称.
